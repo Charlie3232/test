@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>小樣兒園藝 YourGarden | 職人植選</title>
+    <meta name="description" content="小樣兒園藝，來自職人手藝，搭配手工水泥盆器，特殊植物專車，不封箱專車配送到家，線上訂購，台灣北中南均可配送。最完整的售後服務。">
+    <meta name="keywords" content="小樣兒園藝,YourGarden,植物,盆栽,水泥盆,室內植物,室外植物,觀葉植物,台灣植栽,龜背芋,植物宅配,植物專車">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="小樣兒園藝 YourGarden | 職人植選">
+    <meta property="og:description" content="來自職人手藝，搭配手工水泥盆器，特殊植物專車不封箱配送到家，台灣北中南均可配送。">
+    <meta property="og:url" content="https://yourgarden5888.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://img2.pixhost.to/images/7939/726945614_images-5.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:image" content="https://img2.pixhost.to/images/7939/726945614_images-5.jpg">
+    <meta property="og:locale" content="zh_TW">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="小樣兒園藝 YourGarden | 職人植選">
+    <meta name="twitter:description" content="來自職人手藝，搭配手工水泥盆器，特殊植物專車不封箱配送到家，台灣北中南均可配送。">
+    <link rel="icon" type="image/jpeg" href="https://img2.pixhost.to/images/8001/727979101_images-6.jpg">
+    <link rel="apple-touch-icon" href="https://img2.pixhost.to/images/8001/727979101_images-6.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --concrete-bg: #d8d8d8; --concrete-grain: #c0c0c0;
+            --dark-pot: #121212; --text-main: #222; --text-sub: #666;
+            --accent-green: #4e5a4d; --error-red: #cc0000;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { background-color:var(--concrete-bg); background-image:radial-gradient(var(--concrete-grain) 1px,transparent 0); background-size:30px 30px; color:var(--text-main); font-family:'Noto Serif TC',serif; -webkit-font-smoothing:antialiased; }
+
+        .top-nav { width:100%; padding:20px 40px 30px; display:flex; justify-content:space-between; align-items:stretch; flex-wrap:wrap; gap:20px; position:relative; z-index:100; }
+        .info-panel { background:rgba(216,216,216,0.8); backdrop-filter:blur(10px); padding:15px 20px; border-radius:15px; border:1px solid rgba(0,0,0,0.05); font-size:0.8rem; line-height:1.6; letter-spacing:1px; box-shadow:10px 10px 30px rgba(0,0,0,0.05); flex:1; min-width:200px; display:flex; flex-direction:column; justify-content:center; }
+        .header-center { text-align:center; flex:2; min-width:280px; }
+        .logo { font-size:2.2rem; letter-spacing:0.5rem; font-weight:700; color:var(--dark-pot); text-transform:uppercase; display:block; cursor:default; }
+        .logo-sub { font-size:1rem; color:#555; letter-spacing:4px; font-weight:700; margin-top:5px; }
+        .brand-slogan { font-size:0.8rem; color:var(--text-sub); letter-spacing:1px; font-weight:300; margin-top:8px; }
+        .shipping-info { text-align:center; }
+        .shipping-info strong { display:block; white-space:nowrap; margin-bottom:5px; font-size:0.8rem; }
+        .unlimited { display:block; text-align:center; font-size:0.82rem; color:#555; margin-top:5px; font-weight:700; border-top:1px dashed rgba(0,0,0,0.1); padding-top:5px; letter-spacing:4.5px; text-indent:4.5px; }
+
+        .filter-toggle-wrap { max-width:1000px; margin:0 auto 0; display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:0 20px; box-sizing:border-box; }
+        .filter-toggle-btn {
+            width:100%; padding:16px 20px; border-radius:16px; border:1.5px solid rgba(0,0,0,0.1);
+            background:rgba(255,255,255,0.35); font-family:inherit; font-size:0.85rem;
+            font-weight:700; cursor:pointer; transition:all 0.2s; text-align:center;
+            color:var(--text-main); line-height:1.5; letter-spacing:0.5px;
+            display:flex; flex-direction:column; align-items:center; justify-content:center; gap:3px;
+            user-select:none;
+        }
+        .filter-toggle-btn span { white-space:normal; display:block; width:100%; text-align:center; word-break:keep-all; }
+        .filter-toggle-btn .ft-sub { white-space:normal; font-size:0.68rem; }
+        .filter-toggle-btn:hover { background:rgba(255,255,255,0.6); border-color:var(--accent-green); }
+        .filter-toggle-btn.active { background:var(--dark-pot); color:white; border-color:var(--dark-pot); }
+        .filter-toggle-btn.active .ft-sub { color:rgba(255,255,255,0.55); }
+        .ft-emoji { font-size:1.4rem; display:block; margin-bottom:2px; }
+        .ft-sub { font-size:0.68rem; font-weight:400; color:#aaa; letter-spacing:0.5px; white-space:normal; line-height:1.5; }
+
+        .filter-panel { max-width:1000px; margin:0 auto 16px; background:rgba(255,255,255,0.2); padding:22px 25px; border-radius:0 0 20px 20px; border:1px solid rgba(0,0,0,0.05); border-top:none; display:none; flex-direction:column; gap:16px; align-items:center; }
+        .filter-panel.active { display:flex; }
+
+        .filter-row { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; width:100%; }
+        .filter-group { display:flex; flex-direction:column; gap:8px; align-items:center; }
+        .filter-group label.group-title { font-size:0.82rem; font-weight:700; color:var(--accent-green); letter-spacing:1px; }
+        .filter-group label.group-title span { font-size:0.68rem; color:#aaa; font-weight:400; }
+        .checkbox-group { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
+        .checkbox-item { display:flex; align-items:center; gap:5px; font-size:0.82rem; cursor:pointer; color:var(--text-main); font-weight:500; }
+        .checkbox-item input { cursor:pointer; accent-color:var(--accent-green); width:15px; height:15px; }
+
+        .keyword-wrap { position:relative; width:100%; max-width:400px; }
+        .keyword-input { width:100%; padding:10px 16px 10px 38px; border-radius:30px; border:1px solid rgba(0,0,0,0.12); background:rgba(255,255,255,0.7); font-family:inherit; font-size:16px; outline:none; transition:border-color 0.2s; }
+        .keyword-input:focus { border-color:var(--accent-green); }
+        .keyword-icon { position:absolute; left:13px; top:50%; transform:translateY(-50%); color:#aaa; pointer-events:none; }
+
+        .tag-pills { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
+        .keyword-toggle-wrap { max-width:1000px; margin:8px auto 0; display:flex; justify-content:center; padding:0 20px; }
+        .keyword-toggle-btn { padding:14px 40px; border-radius:16px; border:1.5px solid rgba(0,0,0,0.1); background:rgba(255,255,255,0.35); font-family:inherit; font-size:0.88rem; font-weight:700; cursor:pointer; transition:all 0.2s; text-align:center; color:var(--text-main); }
+        .keyword-toggle-btn:hover { background:rgba(255,255,255,0.6); border-color:var(--accent-green); }
+        .keyword-toggle-btn.active { background:var(--dark-pot); color:white; border-color:var(--dark-pot); }
+        .tag-pill { padding:8px 18px; border-radius:20px; border:1.5px solid rgba(0,0,0,0.12); background:white; font-family:inherit; font-size:0.82rem; cursor:pointer; font-weight:700; transition:all 0.18s; letter-spacing:0.5px; }
+        .tag-pill:hover { border-color:var(--accent-green); }
+        .tag-pill.active { background:var(--dark-pot); color:white; border-color:var(--dark-pot); }
+        .filter-hint { font-size:0.7rem; color:#b07070; margin-top:5px; letter-spacing:0.5px; }
+
+        #product-container { max-width:1200px; margin:0 auto 100px; display:grid; grid-template-columns:repeat(3,230px); justify-content:center; gap:40px 60px; padding:0 20px; align-items:start; }
+        .plant-card { width:100%; max-width:230px; cursor:pointer; transition:0.5s ease; margin:0 auto; position:relative; }
+        .plant-card:hover { transform:translateY(-10px); }
+        .img-mask { width:100%; aspect-ratio:1/1.3; background:var(--dark-pot); border-radius:60% 40% 70% 30% / 40% 50% 60% 70%; overflow:hidden; box-shadow:15px 15px 30px rgba(0,0,0,0.1); }
+        .img-mask img { width:100%; height:100%; object-fit:cover; }
+        .card-info { margin-top:15px; text-align:center; overflow:hidden; width:100%; }
+        .card-info h2 { font-size:13px; letter-spacing:1px; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+        .preorder-label { font-size:0.72rem; color:#c0392b; margin-top:4px; letter-spacing:0.5px; opacity:0.8; }
+        .detail-tags { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:10px; }
+        .detail-tag { font-size:0.78rem; color:#666; background:rgba(0,0,0,0.06); border-radius:12px; padding:4px 12px; letter-spacing:0.3px; }
+        .loading-msg { text-align:center; padding:60px 20px; color:var(--text-sub); font-size:0.9rem; letter-spacing:2px; grid-column:1/-1; }
+
+        .detail-overlay { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); backdrop-filter:blur(12px); z-index:1000; overflow-y:auto; }
+        .detail-content { background:var(--concrete-bg); max-width:1000px; margin:40px auto; border-radius:30px; display:flex; position:relative; overflow:hidden; }
+        .detail-left-gallery { flex:0 0 430px; padding:25px; display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; gap:10px; align-content:start; }
+        .zoom-container { width:100%; height:190px; overflow:hidden; border-radius:14px; cursor:zoom-in; }
+        .zoom-container img { width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease; }
+        .zoom-container:hover img { transform:scale(1.06); }
+        .detail-right { flex:1; padding:40px 45px; overflow-y:auto; max-height:90vh; }
+        .section-title { font-weight:700; color:var(--accent-green); margin-top:28px; margin-bottom:12px; border-bottom:1px solid rgba(0,0,0,0.1); padding-bottom:5px; font-size:0.9rem; letter-spacing:2px; }
+        .note-box { font-size:0.85rem; color:#555; background:rgba(255,255,255,0.3); padding:18px; border-radius:15px; border:1px dashed rgba(0,0,0,0.1); line-height:1.8; }
+        .close-btn { position:absolute; top:15px; right:20px; font-size:1.4rem; cursor:pointer; color:var(--dark-pot); background:rgba(216,216,216,0.85); border:none; border-radius:50%; width:40px; height:40px; display:flex; align-items:center; justify-content:center; z-index:20; backdrop-filter:blur(4px); }
+
+        .variant-selector { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+        .variant-btn { padding:7px 13px; border-radius:10px; border:1.5px solid rgba(0,0,0,0.15); background:white; font-family:inherit; font-size:0.75rem; font-weight:700; cursor:pointer; transition:all 0.18s; white-space:nowrap; }
+        .variant-btn:hover:not(.v-soldout) { border-color:var(--accent-green); }
+        .variant-btn.selected { background:var(--dark-pot); color:white; border-color:var(--dark-pot); }
+        .variant-btn.v-soldout { opacity:0.4; cursor:not-allowed; text-decoration:line-through; }
+        .variant-btn.v-preorder { border-color:#c0392b; color:#c0392b; }
+        .variant-btn.v-preorder.selected { background:#c0392b; color:white; }
+        .variant-info-box { background:rgba(255,255,255,0.35); border-radius:12px; padding:14px 18px; margin-top:14px; font-size:0.85rem; line-height:1.8; border:1px solid rgba(0,0,0,0.06); }
+        .variant-price { font-size:1.5rem; color:var(--accent-green); font-weight:700; margin-top:14px; }
+        .preorder-notice-detail { font-size:0.78rem; color:#c0392b; margin-top:6px; }
+        .add-cart-row { display:flex; align-items:center; gap:10px; margin-top:16px; flex-wrap:wrap; }
+        .qty-control { display:flex; align-items:center; background:white; border-radius:20px; padding:5px 12px; border:1px solid #ccc; }
+        .qty-control button { border:none; background:none; cursor:pointer; padding:0 8px; font-size:1.1rem; color:var(--dark-pot); }
+        .qty-val { width:28px; text-align:center; font-size:0.95rem; }
+        .add-btn { background:var(--accent-green); color:white; border:none; padding:10px 22px; border-radius:20px; cursor:pointer; font-family:inherit; font-weight:700; font-size:0.85rem; transition:opacity 0.2s; }
+        .add-btn:hover { opacity:0.8; }
+        .add-btn:disabled { background:#ccc; color:#999; cursor:not-allowed; }
+
+        #checkout-float { position:fixed; bottom:28px; right:24px; background:var(--dark-pot); color:white; padding:14px 24px; border-radius:50px; display:none; cursor:pointer; z-index:1100; font-weight:700; font-size:0.82rem; box-shadow:0 4px 24px rgba(0,0,0,0.3); border:none; font-family:inherit; transition:transform 0.2s; }
+        #checkout-float:hover { transform:scale(1.05); }
+
+        .cart-modal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.75); z-index:2000; overflow-y:auto; padding:15px; }
+        .cart-inner { background:var(--concrete-bg); max-width:560px; width:100%; margin:30px auto; border-radius:30px; padding:35px 30px; position:relative; }
+        .trial-notice { background:rgba(138,117,85,0.12); border:1px solid rgba(138,117,85,0.3); border-radius:12px; padding:12px 16px; margin-bottom:22px; font-size:0.8rem; color:#7a6040; line-height:1.6; text-align:center; }
+        .cart-item-row { display:flex; justify-content:space-between; align-items:flex-start; padding:12px 0; border-bottom:1px dashed rgba(0,0,0,0.1); gap:10px; }
+        .cart-item-name { font-size:0.88rem; font-weight:700; }
+        .cart-item-sub  { font-size:0.75rem; color:#888; margin-top:2px; }
+        .cart-item-price { font-weight:700; color:var(--accent-green); font-size:0.9rem; white-space:nowrap; }
+        .cart-item-del { background:none; border:none; color:#ccc; cursor:pointer; font-size:1rem; padding:0 4px; }
+        .cart-item-del:hover { color:#e00; }
+
+        .addon-section { margin:20px 0 10px; }
+        .addon-title { font-size:0.78rem; font-weight:700; color:var(--accent-green); letter-spacing:1px; margin-bottom:12px; }
+        .addon-hint  { font-size:0.72rem; color:#999; margin-bottom:10px; }
+        .addon-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+        .addon-card  { border-radius:12px; border:1.5px solid rgba(0,0,0,0.1); background:white; padding:10px 8px; text-align:center; cursor:pointer; transition:all 0.18s; display:flex; flex-direction:column; }
+        .addon-card .addon-toggle-btn { margin-top:auto; }
+        .addon-card:hover { border-color:var(--accent-green); }
+        .addon-card.selected { border-color:var(--dark-pot); background:rgba(18,18,18,0.04); }
+        .addon-card img { width:100%; aspect-ratio:1; object-fit:cover; border-radius:8px; margin-bottom:6px; }
+        .addon-card-name  { font-size:0.72rem; font-weight:700; line-height:1.4; }
+        .addon-card-price { font-size:0.7rem; color:var(--accent-green); font-weight:700; margin-top:3px; }
+        .addon-card-note  { font-size:0.62rem; color:#aaa; margin-top:3px; line-height:1.4; }
+        .addon-qty-ctrl { display:flex; align-items:center; justify-content:center; gap:6px; margin-top:8px; background:#f5f5f5; border-radius:12px; padding:4px 8px; }
+        .addon-qty-ctrl span { width:20px; text-align:center; font-size:0.82rem; font-weight:700; }
+        .addon-q-btn { border:none; background:none; cursor:pointer; font-size:1rem; color:#555; padding:0 4px; }
+        .addon-toggle-btn { margin-top:8px; width:100%; padding:6px; border-radius:8px; border:1.5px solid rgba(0,0,0,0.12); background:white; font-family:inherit; font-size:0.72rem; font-weight:700; cursor:pointer; transition:all 0.15s; }
+        .addon-toggle-btn.active { background:var(--dark-pot); color:white; border-color:var(--dark-pot); }
+
+        .region-section { margin:20px 0; }
+        .region-label { font-size:0.78rem; font-weight:700; color:var(--accent-green); letter-spacing:1px; margin-bottom:10px; }
+        .region-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+        .region-btn { padding:10px 8px; border-radius:10px; border:1.5px solid rgba(0,0,0,0.12); background:white; font-family:inherit; font-size:0.75rem; font-weight:700; cursor:pointer; transition:all 0.15s; text-align:center; line-height:1.4; }
+        .region-btn:hover { border-color:var(--accent-green); }
+        .region-btn.selected { background:var(--dark-pot); color:white; border-color:var(--dark-pot); }
+        .region-btn.unavailable { background:rgba(0,0,0,0.04); color:#bbb; cursor:not-allowed; border-color:rgba(0,0,0,0.06); }
+
+        .price-summary { background:rgba(255,255,255,0.4); border-radius:14px; padding:16px 18px; margin-top:16px; }
+        .price-row { display:flex; justify-content:space-between; font-size:0.88rem; margin-bottom:8px; }
+        .price-row.total { font-weight:700; font-size:1rem; color:var(--accent-green); border-top:1px solid rgba(0,0,0,0.1); padding-top:10px; margin-top:4px; margin-bottom:0; }
+        .ship-notice { font-size:0.78rem; margin-top:6px; padding:8px 12px; border-radius:8px; }
+        .ship-notice.warn { background:rgba(204,0,0,0.06); color:var(--error-red); }
+        .ship-notice.ok   { background:rgba(78,90,77,0.08); color:var(--accent-green); }
+        .ship-notice.none { background:rgba(0,0,0,0.04); color:#999; }
+
+        .send-order-btn { width:100%; padding:15px; border-radius:14px; border:none; background:var(--dark-pot); color:white; font-family:inherit; font-size:1rem; font-weight:700; cursor:pointer; margin-top:18px; letter-spacing:2px; transition:opacity 0.2s; }
+        .send-order-btn:hover { opacity:0.85; }
+        .send-order-btn:disabled { opacity:0.4; cursor:not-allowed; }
+
+        #copy-modal { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.8); z-index:3000; align-items:center; justify-content:center; padding:20px; }
+        #copy-modal.show { display:flex; }
+        .copy-box { background:white; border-radius:24px; padding:30px; width:100%; max-width:440px; }
+        .copy-box h3 { font-size:1rem; margin-bottom:6px; letter-spacing:1px; }
+        .copy-hint { font-size:0.78rem; color:#888; margin-bottom:14px; line-height:1.6; }
+        .copy-hint strong { color:var(--accent-green); }
+        .copy-text-area { width:100%; background:#f5f5f5; border:1px solid #ddd; border-radius:12px; padding:16px; font-family:inherit; font-size:0.85rem; line-height:1.8; resize:none; color:var(--text-main); min-height:140px; }
+        .copy-btn { width:100%; padding:13px; border-radius:12px; border:none; background:var(--dark-pot); color:white; font-family:inherit; font-size:0.9rem; font-weight:700; cursor:pointer; margin-top:12px; }
+        .copy-btn.copied { background:var(--accent-green); }
+        .close-copy-btn { width:100%; padding:10px; border-radius:12px; border:1px solid #ddd; background:none; font-family:inherit; font-size:0.82rem; color:#999; cursor:pointer; margin-top:8px; }
+
+        #lightbox { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.92); z-index:9000; align-items:center; justify-content:center; cursor:zoom-out; }
+        #lightbox img { max-width:90vw; max-height:90vh; object-fit:contain; border-radius:10px; }
+        #toast-notice { display:none; position:fixed; top:24px; left:50%; transform:translateX(-50%); background:var(--dark-pot); color:white; padding:13px 24px; border-radius:30px; z-index:5000; font-size:0.88rem; white-space:nowrap; }
+
+        #loading-notice { display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%) scale(0.8); background:rgba(130,125,120,0.88); color:white; padding:26px 36px; border-radius:24px; z-index:5000; font-size:0.95rem; text-align:center; backdrop-filter:blur(8px); pointer-events:none; line-height:2; transition:all 0.3s ease; opacity:0; width:max-content; max-width:85vw; }
+        #loading-notice.show { opacity:1; transform:translate(-50%,-50%) scale(1); }
+        #success-notice { display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%) scale(0.8); background:rgba(78,90,77,0.92); color:white; padding:26px 36px; border-radius:24px; z-index:5000; font-size:0.95rem; text-align:center; backdrop-filter:blur(8px); pointer-events:none; line-height:2; transition:all 0.3s ease; opacity:0; width:max-content; max-width:85vw; }
+        #success-notice.show { opacity:1; transform:translate(-50%,-50%) scale(1); }
+
+        .dot-loading { display:inline-block; }
+        .dot-loading span { animation:dotBlink 1.4s infinite; opacity:0; }
+        .dot-loading span:nth-child(1) { animation-delay:0s; }
+        .dot-loading span:nth-child(2) { animation-delay:0.3s; }
+        .dot-loading span:nth-child(3) { animation-delay:0.6s; }
+        @keyframes dotBlink { 0%,80%,100%{opacity:0} 40%{opacity:1} }
+
+        @media(max-width:850px){
+            .top-nav{padding:20px;}
+            #product-container{grid-template-columns:repeat(2,minmax(140px,180px));gap:24px 20px;}
+            .detail-content{flex-direction:column;margin:15px;}
+            .detail-left-gallery{flex:0 0 auto;width:100%;padding:15px;}
+            .zoom-container{height:140px;}
+            .detail-right{padding:25px;max-height:none;}
+            .site-footer { padding:30px 16px 20px; }
+            .footer-grid { grid-template-columns:1fr 1fr; gap:12px; }
+            .footer-col { text-align:center; }
+            .footer-col h4 { font-size:0.72rem; }
+            .footer-col p, .footer-col a { font-size:0.68rem; line-height:1.9; }
+            .footer-col-service { display:none; }
+            .footer-ig { justify-content:center; }
+            .footer-bottom { font-size:0.62rem; white-space:normal; text-align:center !important; width:100%; }
+        }
+
+        .site-footer { background:rgba(0,0,0,0.06); border-top:1px solid rgba(0,0,0,0.08); padding:50px 40px 30px; margin-top:20px; }
+        .footer-grid { max-width:900px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr 1fr; gap:40px; }
+        .footer-col h4 { font-size:0.82rem; font-weight:700; letter-spacing:2px; color:var(--accent-green); margin-bottom:16px; }
+        .footer-col p, .footer-col a { font-size:0.78rem; color:#777; line-height:2; display:block; text-decoration:none; letter-spacing:0.5px; }
+        .footer-col a:hover { color:var(--accent-green); }
+        .footer-ig { display:flex; align-items:center; gap:8px; font-size:0.78rem; color:#777; text-decoration:none; margin-top:4px; }
+        .footer-ig:hover { color:var(--accent-green); }
+        .footer-ig svg { width:18px; height:18px; fill:#777; flex-shrink:0; }
+        .footer-ig:hover svg { fill:var(--accent-green); }
+        .footer-bottom { width:100%; margin:30px 0 0; padding-top:20px; border-top:1px dashed rgba(0,0,0,0.1); text-align:center !important; font-size:0.72rem; color:#aaa; letter-spacing:1px; display:block; }
+    </style>
+</head>
+<body>
+
+<nav class="top-nav">
+    <div class="info-panel" style="text-align:center;">
+        <strong>此為商品型錄網站</strong><br>
+        訂購請點選購物車，送出品項後私訊IG~~
+        <a href="https://www.instagram.com/your_garden_5888/" target="_blank" rel="noopener"
+           style="display:inline-flex;align-items:center;gap:5px;color:#8aab8a;text-decoration:none;margin-top:6px;font-size:0.78rem;letter-spacing:1px;justify-content:center;">
+            <svg viewBox="0 0 24 24" width="14" height="14" style="fill:#8aab8a;flex-shrink:0;" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            your_garden_5888
+        </a>
+    </div>
+    <div class="header-center">
+        <span class="logo">YourGarden</span>
+        <p class="logo-sub">小樣兒園藝</p>
+        <p class="brand-slogan">在泥與光之間，尋找植物的形狀。</p>
+    </div>
+    <div class="info-panel shipping-info">
+        <strong>🌿 植物專車 特殊不封箱配送到家 🌿</strong>
+        (無上樓僅至一樓 · 無法指定日期)<br>
+        北部+180 / 中部+200 / 南部+230
+        <span class="unlimited">滿 2000 元免運費</span>
+    </div>
+</nav>
+
+<div class="filter-toggle-wrap">
+    <button class="filter-toggle-btn" id="ftbtn-detail" onclick="switchFilter('detail')">
+        <span class="ft-emoji">🏠</span>
+        <span>依空間及大小選擇</span>
+        <span class="ft-sub">環境 / 光照<br>高度</span>
+    </button>
+    <button class="filter-toggle-btn" id="ftbtn-lazy" onclick="switchFilter('lazy')">
+        <span class="ft-emoji">🌱</span>
+        <span>我想懶懶的找植物</span>
+        <span class="ft-sub">依據小樣兒精選#<br>快速挑選</span>
+    </button>
+</div>
+
+<div class="keyword-toggle-wrap">
+    <button class="keyword-toggle-btn" id="ftbtn-keyword" onclick="switchFilter('keyword')">
+        <span>🔍 我是植物達人</span>
+        <span class="ft-sub">直接依據植物名稱關鍵字搜尋</span>
+    </button>
+</div>
+<div class="filter-panel" id="filter-panel-keyword">
+    <div class="keyword-wrap" style="width:100%;max-width:500px;">
+        <span class="keyword-icon">🔍</span>
+        <input class="keyword-input" id="keyword-input" type="text" placeholder="輸入植物名稱關鍵字…" oninput="applyFilters()">
+    </div>
+</div>
+
+<div class="filter-panel" id="filter-panel-detail">
+    <div class="filter-row">
+        <div class="filter-group">
+            <label class="group-title">適合空間 <span>可多選</span></label>
+            <div class="checkbox-group">
+                <label class="checkbox-item"><input type="checkbox" id="fs-indoor"  onchange="applyFilters()"> 室內</label>
+                <label class="checkbox-item"><input type="checkbox" id="fs-outdoor" onchange="applyFilters()"> 室外</label>
+            </div>
+            <span class="filter-hint" id="hint-space" style="display:none;">尚未選擇 適合空間</span>
+        </div>
+        <div class="filter-group">
+            <label class="group-title">光照需求 <span>可多選</span></label>
+            <div class="checkbox-group">
+                <label class="checkbox-item"><input type="checkbox" id="fs-full"   onchange="applyFilters()"> 全日照</label>
+                <label class="checkbox-item"><input type="checkbox" id="fs-half"   onchange="applyFilters()"> 半日照</label>
+                <label class="checkbox-item"><input type="checkbox" id="fs-ind"    onchange="applyFilters()"> 間接光</label>
+                <label class="checkbox-item"><input type="checkbox" id="fs-bright" onchange="applyFilters()"> 明亮處</label>
+            </div>
+            <span class="filter-hint" id="hint-sun" style="display:none;">尚未選擇 光照需求</span>
+        </div>
+    </div>
+    <div class="filter-row">
+        <div class="filter-group">
+            <label class="group-title">植物高度 <span>可多選</span></label>
+            <div class="checkbox-group" id="height-checkboxes">
+                <label class="checkbox-item"><input type="checkbox" value="15-25"  onchange="applyFilters()"> 小品: 15-25CM</label>
+                <label class="checkbox-item"><input type="checkbox" value="26-35"  onchange="applyFilters()"> 中小品: 26-35CM</label>
+                <label class="checkbox-item"><input type="checkbox" value="36-55"  onchange="applyFilters()"> 中品: 36-55CM</label>
+                <label class="checkbox-item"><input type="checkbox" value="56-75"  onchange="applyFilters()"> 中大品: 56-75CM</label>
+                <label class="checkbox-item"><input type="checkbox" value="76-120" onchange="applyFilters()"> 大品: 76-120CM</label>
+                <label class="checkbox-item"><input type="checkbox" value="121-999" onchange="applyFilters()"> 大大品: 121CM以上</label>
+            </div>
+            <span class="filter-hint" id="hint-height" style="display:none;">尚未選擇 植物高度</span>
+        </div>
+    </div>
+</div>
+
+<div class="filter-panel" id="filter-panel-lazy">
+    <div class="tag-pills" id="tag-pills-container">
+        <button class="tag-pill" data-tag="#寵物友善"  onclick="toggleTagFilter(this)">#寵物友善</button>
+        <button class="tag-pill" data-tag="#室內無光"  onclick="toggleTagFilter(this)">#室內無光</button>
+        <button class="tag-pill" data-tag="#西曬"      onclick="toggleTagFilter(this)">#西曬</button>
+        <button class="tag-pill" data-tag="#招財"      onclick="toggleTagFilter(this)">#招財</button>
+        <button class="tag-pill" data-tag="#辦公室"    onclick="toggleTagFilter(this)">#辦公室</button>
+        <button class="tag-pill" data-tag="#送禮推薦"  onclick="toggleTagFilter(this)">#送禮推薦</button>
+        <button class="tag-pill" data-tag="#室外陽台"  onclick="toggleTagFilter(this)">#室外陽台</button>
+        <button class="tag-pill" data-tag="#室內窗邊"  onclick="toggleTagFilter(this)">#室內窗邊</button>
+        <button class="tag-pill" data-tag="#客廳擺飾"  onclick="toggleTagFilter(this)">#客廳擺飾</button>
+        <button class="tag-pill" data-tag="#新手友善"  onclick="toggleTagFilter(this)">#新手友善</button>
+    </div>
+</div>
+
+<div id="plant-hint" style="display:none;text-align:center;margin:8px auto 6px;max-width:1200px;padding:0 20px;">
+    <span style="color:#aaa;font-size:0.72rem;letter-spacing:1px;">↓ 往下滑動 檢閱所有植物 ・ 無特別標示皆為現貨狀態</span>
+    <button id="copy-filter-link-btn" onclick="copyFilterLink()" style="margin-left:10px;padding:3px 10px;border-radius:12px;border:1px solid rgba(0,0,0,0.15);background:rgba(255,255,255,0.6);font-family:inherit;font-size:0.68rem;color:#888;cursor:pointer;" title="複製篩選連結">🔗 複製篩選連結</button>
+</div>
+<main id="product-container">
+    <div class="loading-msg">🌿 植物資料載入中…</div>
+</main>
+<div id="modal-container"></div>
+
+<button id="checkout-float" onclick="openCart()">
+    🛒 完成挑選 試算總額（<span id="cart-count">0</span>）
+</button>
+<div id="toast-notice"></div>
+
+<div id="loading-notice">
+    <span style="font-size:1.1rem;">🌿 載入中<span class="dot-loading"><span>.</span><span>.</span><span>.</span></span></span><br>
+    <span style="font-size:0.82rem;opacity:0.85;">植物們正在趕來~~🥺</span><br>
+    <span style="font-size:0.75rem;opacity:0.7;">請稍等 2-3 秒 ~</span>
+</div>
+<div id="success-notice">
+    🌿 已載入完成<br>
+    <span style="font-size:0.82rem;opacity:0.85;">可以依據您喜歡的方式</span><br>
+    <span style="font-size:0.82rem;opacity:0.85;">療癒地挑選植物囉 ♡</span>
+</div>
+
+<div id="cartModal" class="cart-modal">
+    <div class="cart-inner">
+        <button class="close-btn" onclick="closeCart()">&times;</button>
+        <h2 style="text-align:center;margin-bottom:16px;letter-spacing:3px;font-size:1.1rem;">購物車試算</h2>
+        <div class="trial-notice">
+            ⚠️ 此頁面僅為試算品項，非正式訂單<br>
+            <strong>訂購請私訊 IG @your_garden_5888</strong><br>
+            <span style="font-size:0.75rem;color:#9a7a50;margin-top:4px;display:block;">按下方送出品項後，系統會讓您複製內容<br>方便私訊IG</span>
+        </div>
+        <div id="cart-list"></div>
+
+        <div class="addon-section">
+            <p class="addon-title">底盤加購</p>
+            <p class="addon-hint">店長會幫您配適當大小 🌿 可複選不同底盤</p>
+            <div class="addon-cards">
+                <div class="addon-card" id="addon-cement">
+                    <img src="https://img2.pixhost.to/images/7834/725158266_s__9306426_0.jpg" alt="水泥底盤" onerror="this.style.display='none'">
+                    <div class="addon-card-name">水泥底盤</div>
+                    <div class="addon-card-price">+NT$149</div>
+                    <div class="addon-card-note">10-14CM<br>水滴盆適用</div>
+                    <div class="addon-qty-ctrl" id="addon-qty-cement" style="display:none;">
+                        <button onclick="changeAddonQty('cement',-1)" class="addon-q-btn">-</button>
+                        <span id="addon-val-cement">1</span>
+                        <button onclick="changeAddonQty('cement',1)" class="addon-q-btn">+</button>
+                    </div>
+                    <button class="addon-toggle-btn" id="addon-tog-cement" onclick="toggleAddon('cement')">加購</button>
+                </div>
+                <div class="addon-card" id="addon-clear">
+                    <img src="https://img2.pixhost.to/images/7834/725158406_s__9306427_0.jpg" alt="透明底盤" onerror="this.style.display='none'">
+                    <div class="addon-card-name">透明底盤</div>
+                    <div class="addon-card-price">+NT$20</div>
+                    <div class="addon-card-note">店長配尺寸</div>
+                    <div class="addon-qty-ctrl" id="addon-qty-clear" style="display:none;">
+                        <button onclick="changeAddonQty('clear',-1)" class="addon-q-btn">-</button>
+                        <span id="addon-val-clear">1</span>
+                        <button onclick="changeAddonQty('clear',1)" class="addon-q-btn">+</button>
+                    </div>
+                    <button class="addon-toggle-btn" id="addon-tog-clear" onclick="toggleAddon('clear')">加購</button>
+                </div>
+                <div class="addon-card" id="addon-roller">
+                    <img src="https://img2.pixhost.to/images/7834/725158447_s__9306428_0.jpg" alt="滾輪底盤" onerror="this.style.display='none'">
+                    <div class="addon-card-name">滾輪底盤</div>
+                    <div class="addon-card-price">+NT$250</div>
+                    <div class="addon-card-note">22cm以下盆<br>不建議使用</div>
+                    <div class="addon-qty-ctrl" id="addon-qty-roller" style="display:none;">
+                        <button onclick="changeAddonQty('roller',-1)" class="addon-q-btn">-</button>
+                        <span id="addon-val-roller">1</span>
+                        <button onclick="changeAddonQty('roller',1)" class="addon-q-btn">+</button>
+                    </div>
+                    <button class="addon-toggle-btn" id="addon-tog-roller" onclick="toggleAddon('roller')">加購</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="region-section">
+            <p class="region-label">選擇配送地區</p>
+            <div class="region-grid">
+                <button class="region-btn" data-fee="180" data-label="北部" onclick="selectRegion(this)">北部<br><span style="font-size:0.68rem;font-weight:400;opacity:0.7;">基隆/台北/新北/桃園/新竹</span></button>
+                <button class="region-btn" data-fee="200" data-label="中部" onclick="selectRegion(this)">中部<br><span style="font-size:0.68rem;font-weight:400;opacity:0.7;">苗栗/台中/彰化</span></button>
+                <button class="region-btn" data-fee="230" data-label="南部" onclick="selectRegion(this)">南部<br><span style="font-size:0.68rem;font-weight:400;opacity:0.7;">雲林/嘉義/台南/高雄</span></button>
+                <button class="region-btn" data-fee="5000" data-label="南投/宜蘭/屏東" onclick="selectRegion(this)">南投/宜蘭/屏東<br><span style="font-size:0.68rem;font-weight:400;opacity:0.7;">滿5000免運出貨</span></button>
+                <button class="region-btn unavailable" data-fee="-1" data-label="台東/花蓮" onclick="selectRegion(this)">台東/花蓮<br><span style="font-size:0.68rem;font-weight:400;opacity:0.7;">目前暫無配送</span></button>
+                <button class="region-btn" data-fee="0" data-label="自取" data-type="pickup" onclick="selectRegion(this)">自取 免運<br><span style="font-size:0.68rem;font-weight:400;opacity:0.7;">不限金額</span></button>
+            </div>
+        </div>
+
+        <div class="price-summary">
+            <div class="price-row"><span>商品小計</span><span id="sub-total">NT$ 0</span></div>
+            <div class="price-row"><span>底盤加購</span><span id="addon-total-display">無</span></div>
+            <div class="price-row"><span>配送費用</span><span id="ship-fee-display">請選擇地區</span></div>
+            <div class="price-row total"><span>總金額</span><span id="final-total">－</span></div>
+        </div>
+        <div id="ship-notice-box"></div>
+        <button class="send-order-btn" id="send-order-btn" onclick="openCopyModal()" disabled>送出品項</button>
+    </div>
+</div>
+
+<div id="copy-modal">
+    <div class="copy-box">
+        <h3>📋 複製訂購內容</h3>
+        <p class="copy-hint">複製以下內容，<strong>私訊給小樣兒園藝 IG</strong> 即可完成詢問！</p>
+        <textarea class="copy-text-area" id="copy-textarea" readonly></textarea>
+        <button class="copy-btn" id="copy-btn" onclick="copyText()">複製內容</button>
+        <a id="ig-link-btn" href="https://www.instagram.com/your_garden_5888/" target="_blank" rel="noopener"
+           style="display:none;width:100%;padding:13px;border-radius:12px;border:none;background:#E1306C;color:white;font-family:inherit;font-size:0.9rem;font-weight:700;cursor:pointer;margin-top:8px;text-align:center;text-decoration:none;box-sizing:border-box;">
+            📩 前往 IG 私訊
+        </a>
+        <button class="close-copy-btn" onclick="closeCopyModal()">關閉</button>
+    </div>
+</div>
+
+<div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="">
+</div>
+
+<footer class="site-footer">
+    <div style="text-align:center;font-size:0.78rem;color:#777;line-height:2;letter-spacing:0.5px;">
+        <p style="font-weight:700;color:var(--accent-green);letter-spacing:2px;margin-bottom:10px;">關於我們</p>
+        <p>小樣兒園藝</p>
+        <p>乾隆化工貿易行<br>37563966</p>
+    </div>
+    <div class="footer-bottom">
+        © <span id="footer-year"></span> 小樣兒園藝 YourGarden｜All Rights Reserved
+    </div>
+</footer>
+
+<script>
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz9fn3CgrHVnpXi_umM9VLhedvKORRZtL21yk0Q7fOi_z50r2iCa0FeN7suT6gpE-CW/exec';
+
+const ADDONS = {
+    cement: { name:'水泥底盤', price:149 },
+    clear:  { name:'透明底盤', price:20  },
+    roller: { name:'滾輪底盤', price:250 },
+};
+
+// ── 篩選連結短碼（避免中文亂碼）──
+const SPACE_ENC = {'室內':'in','室外':'out'};
+const SPACE_DEC = {'in':'室內','out':'室外'};
+const SUN_ENC   = {'全日照':'full','半日照':'half','間接光':'ind','明亮處':'bright'};
+const SUN_DEC   = {'full':'全日照','half':'半日照','ind':'間接光','bright':'明亮處'};
+
+let plantsData = [];
+let isLoading  = true;
+let cart = {};
+let currentStatusFilter = 'instock';
+let selectedTagFilter   = null;
+let selectedVariant     = {};
+let selectedRegion      = null;
+let activeFilter        = null;
+
+const ADDON_KEYS = ['cement','clear','roller'];
+let addonQtys   = { cement:1, clear:1, roller:1 };
+let addonActive = { cement:false, clear:false, roller:false };
+
+// ── 快取 key ──
+const CACHE_KEY       = 'yg_plants_cache';
+const CACHE_TIME_KEY  = 'yg_plants_time';
+const CACHE_TTL       = 5 * 60 * 60 * 1000; // 5小時
+
+// ── 儲存狀態（localStorage，關分頁也保留）──
+function saveState() {
+    try {
+        localStorage.setItem('yg_cart',         JSON.stringify(cart||{}));
+        localStorage.setItem('yg_addon_active', JSON.stringify(addonActive||{}));
+        localStorage.setItem('yg_addon_qtys',   JSON.stringify(addonQtys||{}));
+        localStorage.setItem('yg_filter',       activeFilter||'');
+        localStorage.setItem('yg_tag',          selectedTagFilter||'');
+        // 詳情頁開啟狀態
+        const openModal = document.querySelector('.detail-overlay[style*="block"]');
+        localStorage.setItem('yg_open_modal',   openModal ? openModal.id.replace('Overlay','') : '');
+        localStorage.setItem('yg_open_variant', openModal
+            ? (selectedVariant[openModal.id.replace('Overlay','')]?.variant_id||'') : '');
+    } catch(e){}
+}
+
+function restoreState() {
+    try {
+        const c = localStorage.getItem('yg_cart');
+        if (c) { const p=JSON.parse(c); if(p&&typeof p==='object') cart=p; }
+        const aa = localStorage.getItem('yg_addon_active');
+        if (aa) { const p=JSON.parse(aa); if(p&&typeof p==='object') addonActive=p; }
+        const aq = localStorage.getItem('yg_addon_qtys');
+        if (aq) { const p=JSON.parse(aq); if(p&&typeof p==='object') addonQtys=p; }
+        // 配送地區每次重選
+        selectedRegion = null;
+    } catch(e){}
+}
+
+function restoreUI() {
+    updateCartCount();
+    ADDON_KEYS.forEach(type => {
+        if (addonActive[type]) {
+            document.getElementById(`addon-${type}`).classList.add('selected');
+            document.getElementById(`addon-qty-${type}`).style.display = 'flex';
+            document.getElementById(`addon-val-${type}`).innerText = addonQtys[type];
+            const tog = document.getElementById(`addon-tog-${type}`);
+            tog.classList.add('active'); tog.innerText = '取消';
+        }
+    });
+
+    const savedFilter = localStorage.getItem('yg_filter');
+    const savedTag    = localStorage.getItem('yg_tag');
+    const savedModal  = localStorage.getItem('yg_open_modal');
+    const savedVid    = localStorage.getItem('yg_open_variant');
+
+    if (savedFilter) {
+        activeFilter = savedFilter;
+        document.getElementById(`ftbtn-${savedFilter}`)?.classList.add('active');
+        document.getElementById(`filter-panel-${savedFilter}`)?.classList.add('active');
+        if (savedFilter==='detail'||savedFilter==='keyword'||savedFilter==='lazy') {
+            const hint=document.getElementById('plant-hint');
+            if(hint) hint.style.display='block';
+        }
+        // keyword 模式隱藏複製連結按鈕
+        const cpBtn = document.getElementById('copy-filter-link-btn');
+        if (cpBtn) cpBtn.style.display = (savedFilter==='keyword') ? 'none' : 'inline-block';
+
+        if (savedFilter === 'lazy' && savedTag) {
+            selectedTagFilter = savedTag;
+            document.querySelectorAll('.tag-pill').forEach(b => {
+                if (b.dataset.tag === savedTag) b.classList.add('active');
+            });
+        }
+        applyFilters();
+    } else {
+        hideAllCards();
+    }
+
+    // 還原已開啟的詳情頁（像 app 一樣，回來還在龜背芋）
+    if (savedModal && plantsData.find(p=>p.plant_id===savedModal)) {
+        openProduct(savedModal, savedVid||null);
+    }
+}
+
+// ── 載入植物（有快取就用快取，超過 5 小時才重 fetch）──
+async function loadPlants() {
+    // 嘗試讀快取
+    const cached   = sessionStorage.getItem(CACHE_KEY);
+    const cachedAt = parseInt(sessionStorage.getItem(CACHE_TIME_KEY)||'0');
+    const now      = Date.now();
+    const cartHasItems = Object.keys(cart).length > 0;
+
+    if (cached && (now - cachedAt) < CACHE_TTL) {
+        // 有快取且未過期 → 直接用，不顯示 loading 框
+        try {
+            plantsData = JSON.parse(cached);
+            shufflePlants(plantsData);
+            renderCards();
+            renderModals();
+            isLoading = false;
+            enableFilterBtns();
+            restoreUI();
+            checkUrlParam();
+            applyUrlParams();
+            return;
+        } catch(e) {}
+    }
+
+    // 無快取或已過期（且購物車有東西時也只刷植物，購物車不動）
+    document.getElementById('product-container').innerHTML='<div class="loading-msg">🌿 載入中 Loading...</div>';
+    disableFilterBtns();
+
+    // 顯示 loading 框
+    const ln=document.getElementById('loading-notice');
+    ln.style.display='block';
+    setTimeout(()=>ln.classList.add('show'),50);
+
+    fetch(`${SCRIPT_URL}?action=trackVisit`).catch(()=>{});
+
+    try {
+        const tagRes  = await fetch(`${SCRIPT_URL}?action=getTags`);
+        const tagJson = await tagRes.json();
+        if (tagJson.success && tagJson.tags.length) renderTagPills(tagJson.tags);
+    } catch(e){}
+
+    try {
+        const res  = await fetch(`${SCRIPT_URL}?action=getPlants`);
+        const json = await res.json();
+        if (json.success) {
+            plantsData = json.plants;
+            // 存快取
+            sessionStorage.setItem(CACHE_KEY,      JSON.stringify(plantsData));
+            sessionStorage.setItem(CACHE_TIME_KEY, String(Date.now()));
+
+            shufflePlants(plantsData);
+            renderCards();
+            renderModals();
+            isLoading = false;
+
+            // 關 loading 框
+            ln.classList.remove('show');
+            setTimeout(()=>ln.style.display='none', 300);
+
+            enableFilterBtns();
+
+            const sn = document.getElementById('success-notice');
+            sn.style.display='block';
+            setTimeout(()=>sn.classList.add('show'), 50);
+            setTimeout(()=>{ sn.classList.remove('show'); setTimeout(()=>sn.style.display='none', 350); }, 2200);
+
+            restoreUI();
+            checkUrlParam();
+            applyUrlParams();
+
+            // 排程 5 小時後清快取（下次進來重 fetch）
+            setTimeout(() => {
+                sessionStorage.removeItem(CACHE_KEY);
+                sessionStorage.removeItem(CACHE_TIME_KEY);
+            }, CACHE_TTL);
+
+        } else showLoadError();
+    } catch {
+        isLoading = false;
+        ln.classList.remove('show'); setTimeout(()=>ln.style.display='none',300);
+        enableFilterBtns();
+        showLoadError();
+    }
+}
+
+function disableFilterBtns() {
+    ['ftbtn-detail','ftbtn-lazy','ftbtn-keyword'].forEach(id=>{
+        const b=document.getElementById(id);
+        if(b){ b.style.opacity='0.45'; b.style.cursor='not-allowed'; b.style.pointerEvents='none'; }
+    });
+}
+function enableFilterBtns() {
+    ['ftbtn-detail','ftbtn-lazy','ftbtn-keyword'].forEach(id=>{
+        const b=document.getElementById(id);
+        if(b){ b.style.opacity=''; b.style.cursor=''; b.style.pointerEvents=''; }
+    });
+}
+
+function showLoadError() {
+    document.getElementById('product-container').innerHTML=`
+    <div class="loading-msg" style="color:#999;grid-column:1/-1;">
+        ⚠️ 無法載入植物資料，請稍後再試<br>
+        <button onclick="this.innerText='載入中...';this.disabled=true;sessionStorage.removeItem('${CACHE_KEY}');sessionStorage.removeItem('${CACHE_TIME_KEY}');loadPlants();" style="margin-top:16px;padding:10px 28px;border-radius:20px;border:none;background:var(--dark-pot);color:white;font-family:inherit;font-size:0.85rem;font-weight:700;cursor:pointer;">🔄 重新載入</button>
+    </div>`;
+}
+
+function renderCards() {
+    const container = document.getElementById('product-container');
+    container.innerHTML = '';
+    const instock  = plantsData.filter(p=>{ const vis=p.variants.filter(v=>v.status!=='hidden'&&v.status!=='soldout'); return vis.some(v=>v.status==='instock'); });
+    const preorder = plantsData.filter(p=>{ const vis=p.variants.filter(v=>v.status!=='hidden'&&v.status!=='soldout'); return vis.length>0&&vis.every(v=>v.status==='preorder'); });
+    [...instock,...preorder].forEach(p=>{
+        const vis=p.variants.filter(v=>v.status!=='hidden'&&v.status!=='soldout');
+        const isPreorder=vis.every(v=>v.status==='preorder');
+        container.innerHTML+=`
+        <div class="plant-card" data-id="${p.plant_id}" data-name="${p.name}" data-tags="${(p.tags||[]).join(',')}" onclick="openProduct('${p.plant_id}')">
+            <div class="img-mask"><img src="${p.card_img||''}" alt="${p.name}" loading="lazy"></div>
+            <div class="card-info">
+                <h2>${p.name}</h2>
+                ${isPreorder?'<div class="preorder-label">較長備貨（7-10天）</div>':''}
+            </div>
+        </div>`;
+    });
+}
+
+function renderModals() {
+    const box=document.getElementById('modal-container');
+    box.innerHTML='';
+    plantsData.forEach(p=>{
+        const vis=p.variants.filter(v=>v.status!=='hidden').sort((a,b)=>a.height_min-b.height_min);
+        const def=vis.find(v=>v.status!=='soldout')||vis[0];
+        selectedVariant[p.plant_id]=def;
+        const variantBtns=vis.map(v=>{
+            const cls=v.status==='soldout'?'v-soldout':v.status==='preorder'?'v-preorder':'';
+            const sel=v.variant_id===def?.variant_id?'selected':'';
+            return `<button class="variant-btn ${cls} ${sel}" ${v.status==='soldout'?'disabled':''} data-vid="${v.variant_id}" onclick="selectVariant('${p.plant_id}','${v.variant_id}')">${v.pot_label}</button>`;
+        }).join('');
+        const imgs=[...(def?.images||[])]; while(imgs.length<4) imgs.push(imgs[0]||'');
+        box.innerHTML+=`
+        <div id="${p.plant_id}Overlay" class="detail-overlay">
+            <div class="detail-content">
+                <button class="close-btn" onclick="closeProduct('${p.plant_id}')">&times;</button>
+                <div class="detail-left-gallery" id="gallery-${p.plant_id}">
+                    ${imgs.map(src=>`<div class="zoom-container" onclick="openLightbox('${src}')"><img src="${src}" alt="${p.name}" loading="lazy"></div>`).join('')}
+                </div>
+                <div class="detail-right">
+                    <h1>${p.name}</h1>
+                    <div class="section-title">選擇尺寸 SIZE</div>
+                    <div class="variant-selector">${variantBtns}</div>
+                    <div class="variant-info-box" id="vinfo-${p.plant_id}">${renderVInfo(def)}</div>
+                    <div class="variant-price" id="vprice-${p.plant_id}">NT$ ${def?.price||'-'}</div>
+                    <div id="vpreorder-${p.plant_id}" class="preorder-notice-detail" style="display:${def?.status==='preorder'?'block':'none'};">⏳ 此尺寸為預購，較長備貨（7-10天）</div>
+                    <div class="add-cart-row">
+                        <div class="qty-control">
+                            <button type="button" onclick="changeQty('${p.plant_id}',-1)">-</button>
+                            <span class="qty-val" id="qty-${p.plant_id}">1</span>
+                            <button type="button" onclick="changeQty('${p.plant_id}',1)">+</button>
+                        </div>
+                        <button class="add-btn" id="addbtn-${p.plant_id}" onclick="addToCart('${p.plant_id}','${p.name}')">加入購物車試算</button>
+                    </div>
+                    <div class="section-title">照顧指南 GUIDE</div>
+                    <div style="font-size:0.95rem;line-height:1.6;">☀️ ${p.sun_text}<br>💧 ${p.water}<br>🏡 ${p.space_text}</div>
+                    <div class="section-title">注意事項 NOTES</div>
+                    <div class="note-box">${p.notes.map(n=>{const m=n.match(/^(\S+)\s*(.*)/s);const emoji=m?m[1]:'';const text=m?m[2]:n;return`<div style="margin-bottom:5px;display:flex;gap:6px;align-items:flex-start;"><span style="flex-shrink:0;line-height:1.8;">${emoji}</span><span style="flex:1;">${text}</span></div>`;}).join('')}</div>
+                    ${(p.tags&&p.tags.length)?`
+                    <div class="section-title">標籤 TAGS</div>
+                    <div class="detail-tags">${p.tags.map(t=>`<span class="detail-tag">${t}</span>`).join('')}</div>`:''}
+                    <div style="margin-top:20px;">
+                        <button onclick="shareProduct('${p.plant_id}')" style="background:none;border:1px solid #ccc;border-radius:20px;padding:8px 18px;font-family:inherit;font-size:0.78rem;cursor:pointer;color:var(--text-sub);">🔗 分享此植物</button>
+                    </div>
+                </div>
+            </div>
+        </div>`;
+    });
+}
+
+function renderVInfo(v) {
+    if(!v) return '';
+    return `盆器：${v.size_label}<br>含盆高度：約 ${v.height_min}-${v.height_max} cm`;
+}
+
+function selectVariant(plantId, variantId) {
+    const p=plantsData.find(pl=>pl.plant_id===plantId);
+    const v=p?.variants.find(vv=>vv.variant_id===variantId);
+    if(!v||v.status==='soldout') return;
+    selectedVariant[plantId]=v;
+    document.getElementById(plantId+'Overlay').querySelectorAll('.variant-btn').forEach(btn=>{
+        btn.classList.toggle('selected',btn.dataset.vid===variantId);
+    });
+    document.getElementById(`vinfo-${plantId}`).innerHTML=renderVInfo(v);
+    document.getElementById(`vprice-${plantId}`).innerText=`NT$ ${v.price}`;
+    const preEl=document.getElementById(`vpreorder-${plantId}`);
+    if(preEl) preEl.style.display=v.status==='preorder'?'block':'none';
+    const imgs=[...v.images]; while(imgs.length<4) imgs.push(imgs[0]||'');
+    document.getElementById(`gallery-${plantId}`).querySelectorAll('.zoom-container').forEach((el,i)=>{
+        el.querySelector('img').src=imgs[i]||'';
+        el.onclick=()=>openLightbox(imgs[i]||'');
+    });
+    const btn=document.getElementById(`addbtn-${plantId}`);
+    btn.disabled=false;
+    btn.innerText=v.status==='preorder'?'加入購物車試算（預購）':'加入購物車試算';
+    saveState();
+}
+
+function hideAllCards() { document.querySelectorAll('.plant-card').forEach(c=>c.style.display='none'); }
+
+function renderTagPills(tags) {
+    const container = document.getElementById('tag-pills-container');
+    if (!container) return;
+    container.innerHTML = tags.map(t =>
+        `<button class="tag-pill" data-tag="${t}" onclick="toggleTagFilter(this)">${t}</button>`
+    ).join('');
+}
+
+function switchFilter(type) {
+    if (isLoading) { return; }
+    const allTypes = ['detail','lazy','keyword'];
+    if (activeFilter === type) {
+        activeFilter = null;
+        allTypes.forEach(t=>{
+            document.getElementById(`ftbtn-${t}`)?.classList.remove('active');
+            document.getElementById(`filter-panel-${t}`)?.classList.remove('active');
+        });
+        resetDetailFilters();
+        resetLazyFilters();
+        const kw=document.getElementById('keyword-input'); if(kw) kw.value='';
+        const hint=document.getElementById('plant-hint'); if(hint) hint.style.display='none';
+        hideAllCards();
+        saveState();
+        return;
+    }
+    resetDetailFilters();
+    resetLazyFilters();
+    const kw=document.getElementById('keyword-input'); if(kw) kw.value='';
+    activeFilter = type;
+    allTypes.forEach(t=>{
+        document.getElementById(`ftbtn-${t}`)?.classList.toggle('active', t===type);
+        document.getElementById(`filter-panel-${t}`)?.classList.toggle('active', t===type);
+    });
+    const hint=document.getElementById('plant-hint');
+    if(hint) hint.style.display=(type==='detail'||type==='keyword'||type==='lazy')?'block':'none';
+    const cpBtn=document.getElementById('copy-filter-link-btn');
+    if(cpBtn) cpBtn.style.display=(type==='keyword')?'none':'inline-block';
+    saveState();
+    applyFilters();
+    setTimeout(()=>{
+        const panel=document.getElementById(`filter-panel-${type}`);
+        if(panel) panel.scrollIntoView({behavior:'smooth', block:'start'});
+    }, 100);
+}
+
+function resetDetailFilters() {
+    ['fs-indoor','fs-outdoor','fs-full','fs-half','fs-ind','fs-bright'].forEach(id=>{
+        const el=document.getElementById(id); if(el) el.checked=false;
+    });
+    document.querySelectorAll('#height-checkboxes input').forEach(cb=>cb.checked=false);
+    const kw=document.getElementById('keyword-input'); if(kw) kw.value='';
+    ['hint-space','hint-sun','hint-height'].forEach(id=>{
+        const el=document.getElementById(id); if(el) el.style.display='none';
+    });
+}
+
+function resetLazyFilters() {
+    selectedTagFilter=null;
+    document.querySelectorAll('.tag-pill').forEach(b=>b.classList.remove('active'));
+}
+
+function toggleTagFilter(btn) {
+    const isActive = btn.classList.contains('active');
+    document.querySelectorAll('.tag-pill').forEach(b=>b.classList.remove('active'));
+    if (!isActive) { btn.classList.add('active'); selectedTagFilter = btn.dataset.tag; }
+    else { selectedTagFilter = null; }
+    saveState();
+    applyFilters();
+}
+
+function setStatusFilter(val,btn) {
+    currentStatusFilter=val;
+    document.querySelectorAll('.status-pill').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    applyFilters();
+}
+
+function applyFilters() {
+    if (!activeFilter) { hideAllCards(); return; }
+    document.querySelectorAll('.plant-card').forEach(card=>{
+        const p=plantsData.find(pl=>pl.plant_id===card.dataset.id);
+        if(!p){card.style.display='none';return;}
+        const visV=p.variants.filter(v=>v.status!=='hidden'&&v.status!=='soldout');
+        if (activeFilter==='keyword') {
+            const kw=(document.getElementById('keyword-input')?.value||'').trim().toLowerCase();
+            card.style.display=(!kw||p.name.toLowerCase().includes(kw))?'block':'none';
+            return;
+        }
+        if (activeFilter==='detail') {
+            const spaceChecked=[];
+            if(document.getElementById('fs-indoor')?.checked)  spaceChecked.push('室內');
+            if(document.getElementById('fs-outdoor')?.checked) spaceChecked.push('室外');
+            const sunChecked=[];
+            if(document.getElementById('fs-full')?.checked)   sunChecked.push('全日照');
+            if(document.getElementById('fs-half')?.checked)   sunChecked.push('半日照');
+            if(document.getElementById('fs-ind')?.checked)    sunChecked.push('間接光');
+            if(document.getElementById('fs-bright')?.checked) sunChecked.push('明亮處');
+            const checkedH=Array.from(document.querySelectorAll('#height-checkboxes input:checked')).map(cb=>{
+                const r=cb.value.split('-');return{min:parseInt(r[0]),max:parseInt(r[1])};
+            });
+            const hS=document.getElementById('hint-space');
+            const hSu=document.getElementById('hint-sun');
+            const hH=document.getElementById('hint-height');
+            if(hS)  hS.style.display  = spaceChecked.length===0?'block':'none';
+            if(hSu) hSu.style.display = sunChecked.length===0?'block':'none';
+            if(hH)  hH.style.display  = checkedH.length===0?'block':'none';
+            if(spaceChecked.length===0||sunChecked.length===0||checkedH.length===0){ card.style.display='none'; return; }
+            const keyword=(document.getElementById('keyword-input')?.value||'').trim().toLowerCase();
+            const matchSpace  = spaceChecked.some(s=>p.space.includes(s));
+            const matchSun    = sunChecked.some(s=>p.sun.includes(s));
+            const matchH      = checkedH.some(r=>p.variants.some(v=>v.status!=='hidden'&&v.height_min<=r.max&&v.height_max>=r.min));
+            const matchStatus = visV.some(v=>v.status==='instock'||v.status==='preorder');
+            const matchKw     = !keyword||p.name.toLowerCase().includes(keyword);
+            card.style.display=(matchSpace&&matchSun&&matchH&&matchStatus&&matchKw)?'block':'none';
+        } else if (activeFilter==='lazy') {
+            if(!selectedTagFilter){card.style.display='none';return;}
+            card.style.display=(p.tags||[]).includes(selectedTagFilter)?'block':'none';
+        }
+    });
+}
+
+// ── 開植物詳情（支援帶 variant_id）──
+function openProduct(id, variantId) {
+    const overlay = document.getElementById(id+'Overlay');
+    if (!overlay) return;
+    overlay.style.display='block';
+    document.body.style.overflow='hidden';
+    // 若有指定尺寸就切換
+    if (variantId) {
+        const p = plantsData.find(pl=>pl.plant_id===id);
+        if (p) {
+            const v = p.variants.find(vv=>vv.variant_id===variantId);
+            if (v && v.status!=='soldout') selectVariant(id, variantId);
+        }
+    }
+    const vid = selectedVariant[id]?.variant_id || '';
+    history.pushState({modal:id, vid},'', `?id=${id}${vid?'&vid='+vid:''}`);
+    saveState();
+}
+
+function closeProduct(id) {
+    document.getElementById(id+'Overlay').style.display='none';
+    document.body.style.overflow='auto';
+    history.pushState(null,'',window.location.pathname);
+    saveState();
+}
+
+window.addEventListener('popstate', e=>{
+    document.querySelectorAll('.detail-overlay').forEach(o=>o.style.display='none');
+    document.body.style.overflow='auto';
+    if(e.state?.modal){
+        const el=document.getElementById(e.state.modal+'Overlay');
+        if(el){
+            el.style.display='block';
+            document.body.style.overflow='hidden';
+            if(e.state.vid) selectVariant(e.state.modal, e.state.vid);
+        }
+    }
+    saveState();
+});
+
+function openLightbox(src){document.getElementById('lightbox-img').src=src;document.getElementById('lightbox').style.display='flex';}
+function closeLightbox(){document.getElementById('lightbox').style.display='none';}
+
+// ── 分享植物（帶目前選中的 variant_id）──
+function shareProduct(id) {
+    const vid = selectedVariant[id]?.variant_id || '';
+    const url = `${location.origin}${location.pathname}?id=${id}${vid?'&vid='+vid:''}`;
+    navigator.clipboard.writeText(url).then(()=>showToast('連結已複製 🔗'));
+}
+
+// ── URL 參數：植物頁（支援 vid）──
+function checkUrlParam() {
+    const params = new URLSearchParams(location.search);
+    const id  = params.get('id');
+    const vid = params.get('vid');
+    if (id && plantsData.find(p=>p.plant_id===id)) openProduct(id, vid||null);
+}
+
+function changeQty(pid,d){const el=document.getElementById(`qty-${pid}`);if(el)el.innerText=Math.max(1,parseInt(el.innerText)+d);}
+
+function addToCart(plantId,plantName){
+    const v=selectedVariant[plantId]; if(!v) return;
+    const qty=parseInt(document.getElementById(`qty-${plantId}`)?.innerText||1);
+    const key=`${plantName}｜${v.pot_label}`;
+    if(cart[key]) cart[key].qty+=qty; else cart[key]={price:v.price,qty,plantName,potLabel:v.pot_label};
+    saveState();
+    const qe=document.getElementById(`qty-${plantId}`);if(qe)qe.innerText='1';
+    updateCartCount(); showToast('已加入購物車試算 🌿');
+}
+
+function updateCartCount(){
+    const count=Object.values(cart).reduce((a,b)=>a+b.qty,0);
+    document.getElementById('cart-count').innerText=count;
+    document.getElementById('checkout-float').style.display=count>0?'block':'none';
+}
+
+function openCart(){renderCartList();updatePriceSummary();document.getElementById('cartModal').style.display='block';document.body.style.overflow='hidden';}
+function closeCart(){document.getElementById('cartModal').style.display='none';document.body.style.overflow='auto';}
+
+function renderCartList(){
+    const list=document.getElementById('cart-list');
+    list.innerHTML='';
+    if(!Object.keys(cart).length){list.innerHTML='<p style="text-align:center;color:#aaa;padding:20px;font-size:0.85rem;">購物車是空的</p>';return;}
+    Object.entries(cart).forEach(([key,item])=>{
+        const sk=key.replace(/'/g,"\\'");
+        list.innerHTML+=`
+        <div class="cart-item-row">
+            <div><div class="cart-item-name">${item.plantName}</div><div class="cart-item-sub">${item.potLabel}</div></div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;">
+                <div style="display:flex;align-items:center;background:white;border-radius:16px;padding:3px 10px;border:1px solid #ccc;gap:4px;">
+                    <button onclick="changeCartQty('${sk}',-1)" style="border:none;background:none;cursor:pointer;font-size:1rem;color:#555;padding:0 4px;">-</button>
+                    <span style="width:22px;text-align:center;font-size:0.88rem;">${item.qty}</span>
+                    <button onclick="changeCartQty('${sk}',1)" style="border:none;background:none;cursor:pointer;font-size:1rem;color:#555;padding:0 4px;">+</button>
+                </div>
+                <span class="cart-item-price">NT$ ${item.price*item.qty}</span>
+                <button class="cart-item-del" onclick="removeFromCart('${sk}')">✕</button>
+            </div>
+        </div>`;
+    });
+}
+
+function removeFromCart(key){delete cart[key];saveState();updateCartCount();renderCartList();updatePriceSummary();}
+function changeCartQty(key,delta){
+    if(!cart[key])return;
+    cart[key].qty=cart[key].qty+delta;
+    if(cart[key].qty<=0){ delete cart[key]; }
+    saveState();updateCartCount();renderCartList();updatePriceSummary();
+}
+
+function toggleAddon(type) {
+    addonActive[type] = !addonActive[type];
+    if (!addonActive[type]) addonQtys[type] = 1;
+    const card   = document.getElementById(`addon-${type}`);
+    const qtyDiv = document.getElementById(`addon-qty-${type}`);
+    const togBtn = document.getElementById(`addon-tog-${type}`);
+    const valEl  = document.getElementById(`addon-val-${type}`);
+    card.classList.toggle('selected', addonActive[type]);
+    qtyDiv.style.display = addonActive[type] ? 'flex' : 'none';
+    togBtn.classList.toggle('active', addonActive[type]);
+    togBtn.innerText = addonActive[type] ? '取消' : '加購';
+    if (addonActive[type]) valEl.innerText = addonQtys[type];
+    saveState(); updatePriceSummary();
+}
+function changeAddonQty(type, d) {
+    addonQtys[type] = Math.max(1, addonQtys[type] + d);
+    document.getElementById(`addon-val-${type}`).innerText = addonQtys[type];
+    saveState(); updatePriceSummary();
+}
+function getAddonCost() { return ADDON_KEYS.reduce((sum, t) => addonActive[t] ? sum + ADDONS[t].price * addonQtys[t] : sum, 0); }
+function getAddonLines() { return ADDON_KEYS.filter(t=>addonActive[t]).map(t=>`底盤加購：${ADDONS[t].name} x${addonQtys[t]}  NT$${ADDONS[t].price*addonQtys[t]}`); }
+
+function selectRegion(btn){
+    const fee=parseInt(btn.dataset.fee);
+    if(fee===-1) return;
+    document.querySelectorAll('.region-btn').forEach(b=>b.classList.remove('selected'));
+    btn.classList.add('selected');
+    const type=btn.dataset.type||'';
+    if(fee===5000) selectedRegion={fee:5000,label:btn.dataset.label,type:'conditional'};
+    else if(type==='pickup') selectedRegion={fee:0,label:'自取',type:'pickup'};
+    else selectedRegion={fee,label:btn.dataset.label,type:'normal'};
+    updatePriceSummary();
+}
+
+function updatePriceSummary(){
+    const sub=Object.values(cart).reduce((a,b)=>a+(b.price*b.qty),0);
+    const addonCost=getAddonCost();
+    document.getElementById('sub-total').innerText=`NT$ ${sub}`;
+    document.getElementById('addon-total-display').innerText=addonCost>0?`NT$ ${addonCost}`:'無';
+    const noticeBox=document.getElementById('ship-notice-box');
+    const sendBtn=document.getElementById('send-order-btn');
+    let shipFee=0,shipText='請選擇地區',totalText='－',canSend=false;
+    if(!selectedRegion){noticeBox.innerHTML='';sendBtn.disabled=true;}
+    else if(selectedRegion.type==='pickup'){shipFee=0;shipText='免運（自取）';totalText=`NT$ ${sub+addonCost}`;noticeBox.innerHTML=`<div class="ship-notice ok">✅ 自取免運，不限金額</div>`;canSend=Object.keys(cart).length>0;}
+    else if(selectedRegion.type==='conditional'){
+        if(sub>=5000){shipFee=0;shipText='免運';totalText=`NT$ ${sub+addonCost}`;noticeBox.innerHTML=`<div class="ship-notice ok">✅ 已達5000元，免運費出貨</div>`;canSend=true;}
+        else{shipText='未達門檻';totalText='－';noticeBox.innerHTML=`<div class="ship-notice warn">⚠️ 此地區訂單需滿 NT$5,000 才有出貨，目前差 NT$${5000-sub}</div>`;canSend=false;}
+    } else {
+        if(sub>=2000){shipFee=0;shipText='免運';totalText=`NT$ ${sub+addonCost}`;noticeBox.innerHTML=`<div class="ship-notice ok">✅ 已達2000元，免運費出貨</div>`;}
+        else{shipFee=selectedRegion.fee;shipText=`NT$ ${shipFee}`;totalText=`NT$ ${sub+addonCost+shipFee}`;noticeBox.innerHTML=`<div class="ship-notice none" style="color:#888;">滿 NT$2,000 免運費，目前差 NT$${2000-sub}</div>`;}
+        canSend=Object.keys(cart).length>0;
+    }
+    document.getElementById('ship-fee-display').innerText=shipText;
+    document.getElementById('final-total').innerText=totalText;
+    sendBtn.disabled=!canSend||Object.keys(cart).length===0;
+}
+
+function openCopyModal(){
+    const lines=['老闆你好 我要購買：'];
+    Object.values(cart).forEach(item=>{ lines.push(`${item.plantName}｜${item.potLabel} x${item.qty}  NT$${item.price*item.qty}`); });
+    getAddonLines().forEach(l=>lines.push(l));
+    if(selectedRegion){
+        const sub=Object.values(cart).reduce((a,b)=>a+(b.price*b.qty),0);
+        if(selectedRegion.type==='pickup') lines.push(`\n配送方式：自取（免運）`);
+        else if(selectedRegion.type==='normal'){
+            if(sub>=2000) lines.push(`\n配送地區：${selectedRegion.label}（滿2000免運）`);
+            else lines.push(`\n配送地區：${selectedRegion.label} 運費 +NT$${selectedRegion.fee}`);
+        } else if(selectedRegion.type==='conditional'){
+            lines.push(`\n配送地區：${selectedRegion.label}（滿5000免運）`);
+        }
+    }
+    document.getElementById('copy-textarea').value=lines.join('\n');
+    document.getElementById('copy-btn').innerText='複製內容';
+    document.getElementById('copy-btn').classList.remove('copied');
+    document.getElementById('copy-modal').classList.add('show');
+}
+function closeCopyModal(){
+    document.getElementById('copy-modal').classList.remove('show');
+    const igBtn=document.getElementById('ig-link-btn');
+    if(igBtn) igBtn.style.display='none';
+}
+function copyText(){
+    const text = document.getElementById('copy-textarea').value;
+    const btn  = document.getElementById('copy-btn');
+    const igBtn= document.getElementById('ig-link-btn');
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(()=>{
+            btn.innerText='✅ 已複製！去私訊IG吧 🌿'; btn.classList.add('copied');
+            if(igBtn) igBtn.style.display='block';
+        }).catch(()=>{ fallbackCopy(text, btn, igBtn); });
+    } else { fallbackCopy(text, btn, igBtn); }
+}
+function fallbackCopy(text, btn, igBtn) {
+    const ta = document.getElementById('copy-textarea');
+    ta.select(); ta.setSelectionRange(0, 99999);
+    try {
+        document.execCommand('copy');
+        btn.innerText='✅ 已複製！去私訊IG吧 🌿'; btn.classList.add('copied');
+        if(igBtn) igBtn.style.display='block';
+    } catch(e) { btn.innerText='請手動長按文字複製'; }
+}
+
+// ── 複製篩選連結（英文短碼，無亂碼）──
+function copyFilterLink() {
+    if (activeFilter === 'keyword') return;
+    const url = new URL(location.href);
+    url.search = '';
+    if (activeFilter === 'lazy' && selectedTagFilter) {
+        url.searchParams.set('tag', selectedTagFilter);
+    } else if (activeFilter === 'detail') {
+        const sp=[], su=[];
+        if(document.getElementById('fs-indoor')?.checked)  sp.push(SPACE_ENC['室內']);
+        if(document.getElementById('fs-outdoor')?.checked) sp.push(SPACE_ENC['室外']);
+        if(document.getElementById('fs-full')?.checked)    su.push(SUN_ENC['全日照']);
+        if(document.getElementById('fs-half')?.checked)    su.push(SUN_ENC['半日照']);
+        if(document.getElementById('fs-ind')?.checked)     su.push(SUN_ENC['間接光']);
+        if(document.getElementById('fs-bright')?.checked)  su.push(SUN_ENC['明亮處']);
+        const h = Array.from(document.querySelectorAll('#height-checkboxes input:checked')).map(cb=>cb.value);
+        if(sp.length) url.searchParams.set('sp', sp.join('.'));
+        if(su.length) url.searchParams.set('su', su.join('.'));
+        if(h.length)  url.searchParams.set('h',  h.join('.'));
+    }
+    navigator.clipboard.writeText(url.toString()).then(()=>showToast('🔗 篩選連結已複製！'));
+}
+
+// ── URL 參數還原（支援新短碼 + 舊格式相容）──
+function applyUrlParams() {
+    const params = new URLSearchParams(location.search);
+    const tag = params.get('tag');
+    // 新格式
+    const sp = params.get('sp');
+    const su = params.get('su');
+    const h  = params.get('h');
+    // 舊格式相容
+    const spaceOld  = params.get('space');
+    const sunOld    = params.get('sun');
+    const heightOld = params.get('height');
+    const kw = params.get('kw');
+
+    if (tag) {
+        switchFilter('lazy');
+        setTimeout(()=>{
+            const btn = document.querySelector(`.tag-pill[data-tag="${tag}"]`);
+            if (btn) toggleTagFilter(btn);
+        }, 50);
+    } else if (sp||su||h||spaceOld||sunOld||heightOld) {
+        switchFilter('detail');
+        if (sp) sp.split('.').forEach(s=>{ const zh=SPACE_DEC[s]; if(zh==='室內') document.getElementById('fs-indoor').checked=true; if(zh==='室外') document.getElementById('fs-outdoor').checked=true; });
+        if (su) su.split('.').forEach(s=>{ const zh=SUN_DEC[s]; if(zh==='全日照') document.getElementById('fs-full').checked=true; if(zh==='半日照') document.getElementById('fs-half').checked=true; if(zh==='間接光') document.getElementById('fs-ind').checked=true; if(zh==='明亮處') document.getElementById('fs-bright').checked=true; });
+        if (h)  document.querySelectorAll('#height-checkboxes input').forEach(cb=>{ cb.checked=h.split('.').includes(cb.value); });
+        // 舊格式
+        if (spaceOld) spaceOld.split(',').forEach(s=>{ if(s==='室內') document.getElementById('fs-indoor').checked=true; if(s==='室外') document.getElementById('fs-outdoor').checked=true; });
+        if (sunOld)   sunOld.split(',').forEach(s=>{ if(s==='全日照') document.getElementById('fs-full').checked=true; if(s==='半日照') document.getElementById('fs-half').checked=true; if(s==='間接光') document.getElementById('fs-ind').checked=true; if(s==='明亮處') document.getElementById('fs-bright').checked=true; });
+        if (heightOld) document.querySelectorAll('#height-checkboxes input').forEach(cb=>{ cb.checked=heightOld.split(',').includes(cb.value); });
+        applyFilters();
+    } else if (kw) {
+        switchFilter('keyword');
+        const input = document.getElementById('keyword-input');
+        if(input) { input.value=kw; applyFilters(); }
+    }
+}
+
+function showToast(msg){const t=document.getElementById('toast-notice');t.innerText=msg;t.style.display='block';setTimeout(()=>t.style.display='none',2500);}
+function shufflePlants(arr){for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]];}}
+
+document.getElementById('footer-year').innerText=new Date().getFullYear();
+restoreState();
+loadPlants();
+</script>
+</body>
+</html>
