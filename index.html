@@ -686,13 +686,26 @@ function renderCards() {
         const isPreorder=vis.every(v=>v.status==='preorder');
         container.innerHTML+=`
         <div class="plant-card" data-id="${p.plant_id}" data-name="${p.name}" data-tags="${(p.tags||[]).join(',')}" onclick="openProduct('${p.plant_id}')">
-            <div class="img-mask"><img src="${p.card_img||''}" alt="${p.name}" loading="lazy"></div>
+            <div class="img-mask"><img src="${getCardImageSrc(p.card_img)}" alt="${p.name}" loading="lazy" decoding="async"></div>
             <div class="card-info">
                 <h2>${p.name}</h2>
                 ${isPreorder?'<div class="preorder-label">較長備貨（7-10天）</div>':''}
             </div>
         </div>`;
     });
+}
+
+function getCardImageSrc(src) {
+    const raw = String(src||'');
+    if (!raw) return '';
+    try {
+        const url = new URL(raw);
+        if (url.hostname === 'drive.google.com' && url.pathname.includes('/thumbnail')) {
+            url.searchParams.set('sz', 'w500');
+            return url.toString();
+        }
+    } catch(e) {}
+    return raw;
 }
 
 function renderModals() {
